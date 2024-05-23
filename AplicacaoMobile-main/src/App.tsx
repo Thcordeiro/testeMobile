@@ -1,25 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import { NavigationContainer } from '@react-navigation/native';
+import Navigator from "./componentes/Stack/Navigator";
 
-import Route from "./routes";
-import { StyleSheet, View } from "react-native";
-
-export default function(){
-    return(
-        <View>
-            
-        </View>
-    )
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Navigator/>
+    </NavigationContainer>
+  );
 }
-const style = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    fonte: {
-      fontSize:40
-    }
-  }
 
-  )
 
